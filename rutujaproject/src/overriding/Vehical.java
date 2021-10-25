@@ -1,17 +1,18 @@
 package overriding;
 
 public class Vehical {
-	void run() 
-	{
-		System.out.println("Vehicle is running");
-	}
-}
-class Bike extends Vehical {
-	public static void main(String[] args)
-	{
-		Bike obj = new Bike();
-		obj.run();
-	}
+	 //defining a method  
+	  void run(){System.out.println("Vehicle is running");}  
+	}  
+	//Creating a child class  
+	class Bike2 extends Vehical{  
+	  //defining the same method as in the parent class  
+	  void run(){System.out.println("Bike is running safely");}  
+	  
+	  public static void main(String args[]){  
+	  Bike2 obj = new Bike2();//creating object  
+	  obj.run();//calling method  
+	  }  
 }
 
 
